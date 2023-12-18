@@ -1,0 +1,61 @@
+Autoscaling
+create an ec2 instances
+install any web application on that instances
+take a image of that ec2 instances
+
+go to aws dashboard
+go to services
+click on autoscaling
+click on create auto scaling group
+
+choose launch template
+give a name for autoscaling group
+launch the template
+if you have a launch  template.you use it
+if you don't have a launch instance. you create it
+click on next
+
+next give a network like vpc
+create a vpc --if you don't have a vpc
+if you have a vpc .you use it 
+click on suitable---availability zones and subnets
+click on next
+
+configuration advanced options like load balancer etc
+if you don't have load balancer
+if you create a load balancer
+first create a target groups
+create a target group with instances,ip address ,ipv4 etc
+after create a loadbalancer
+
+click on next
+
+configure group size and scaling
+like desired capacity like how much you want
+ scaling like min desired capacity
+              max desired capacity
+automatic scaling like target tracking scaling polices
+click on metric type like cpu utilization,network type etc
+
+target value
+how much value after you get a laodbalancer (or)distrub the trafic
+instance warmup like how many instances you want 
+
+instance maintance policy like 
+no policies
+launch before terminating
+terminating and launch 
+custom behavior
+
+click on next
+
+add notification (optional)
+if you want to get a notification.
+you give a sns credentials
+otherwise cloick on next
+
+add tags is optional
+finally view summary and click on 
+create auto scaling group..
+
+
